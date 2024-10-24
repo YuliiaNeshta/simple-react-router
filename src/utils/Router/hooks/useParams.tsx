@@ -7,7 +7,7 @@ export function useParams(routePattern: string) {
         const currentPath = window.location.pathname;
 
         const extractParams = (pattern: string, path: string) => {
-            // This part remove empty strings
+            // Remove empty strings
             const patternParts = pattern.split("/").filter(Boolean);
             const pathParts = path.split("/").filter(Boolean);
 

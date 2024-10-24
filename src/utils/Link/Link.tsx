@@ -8,6 +8,7 @@ type LinkProps = {
     params?: RouteParams;
     children: ReactNode;
 };
+
 export function Link({ to, params, children }: LinkProps) {
     // Function for changing dynamic path
     const generatePath = (to: string, params?: RouteParams) => {
